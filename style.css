@@ -1110,12 +1110,16 @@ ul {
 .rs-header .menu-area .rs-menu li.active > a,
 .rs-header-2 .menu-area .rs-menu li.active > a,
 .rs-header-3 .menu-area .rs-menu li.active > a,
-.rs-header-4 .menu-area .rs-menu li.active > a,
+.rs-header-4 .menu-area .rs-menu li.active > a 
+{
+  color: white !important;
+}
 .rs-header .menu-area .rs-menu li a:hover,
 .rs-header-2 .menu-area .rs-menu li a:hover,
 .rs-header-3 .menu-area .rs-menu li a:hover,
-.rs-header-4 .menu-area .rs-menu li a:hover {
-  color: #143d59 !important;
+.rs-header-4 .menu-area .rs-menu li a:hover
+{
+  color: #143d59;
 }
 .rs-header-2 {
   position: absolute;
@@ -1143,7 +1147,7 @@ ul {
 /* ----- Menu -------*/
 .nav-menu > li > a {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 2rem;
 }
 .home1 .logo-area {
   padding-top: 3px;
