@@ -2010,8 +2010,6 @@ ul {
 .rs-banner-section .banner-inner {
   position: absolute;
   width: 100%;
-  top: 50%;
-  left: 0;
   transform: translateY(-50%);
 }
 .rs-banner-section .banner-inner .sl-sub-title {
@@ -2124,11 +2122,33 @@ ul {
 }
 .rs-banner-section3 {
   background: url(images/bg/banner.jpg);
-  background-position: center top;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
   background-size: cover;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .rs-banner-section .banner-inner
+  {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .mobile-view-form
+  {
+    display: block;
+  }
+}
+@media only screen and (min-width: 600px)
+{
+  .mobile-view-form
+  {
+    display: none;
+  }
 }
 .rs-banner-section3 .countdown-part .sub-title {
   display: block;
@@ -2181,16 +2201,16 @@ ul {
   line-height: 17px;
   font-size: 12px !important;
 }
-.rs-banner-section3 .register-form {
+.register-form {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
 }
-.rs-banner-section3 .register-form .form-title {
+.register-form .form-title {
   position: relative;
   padding: 30px 65px 36px;
   margin-bottom: 50px;
 }
-.rs-banner-section3 .register-form .form-title .title {
+.register-form .form-title .title {
   font-weight: 400;
   color: #fff;
   position: relative;
@@ -2198,7 +2218,7 @@ ul {
   line-height: 1.4;
   font-size: 22px;
 }
-.rs-banner-section3 .register-form .form-title:after {
+.register-form .form-title:after {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -2209,10 +2229,10 @@ ul {
   content: "";
   border-radius: 10px;
 }
-.rs-banner-section3 .register-form .form-group {
+.register-form .form-group {
   padding: 0 50px 5px;
 }
-.rs-banner-section3 .register-form .form-group .from-control {
+.register-form .form-group .from-control {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 3px;
@@ -2225,7 +2245,7 @@ ul {
   border: 1px solid rgba(54, 54, 54, 0.1);
   outline: 0;
 }
-.rs-banner-section3 .register-form .form-group input[type=submit] {
+.register-form .form-group input[type=submit] {
   width: 100%;
   margin-bottom: 50px;
   border-radius: 3px;
@@ -2242,14 +2262,14 @@ ul {
   transition: 0.4s;
   font-weight: 600;
 }
-.rs-banner-section3 .register-form .form-group input[type=submit]:hover {
+.register-form .form-group input[type=submit]:hover {
   color: #ffffff;
   background: #143d59;
 }
-.rs-banner-section3 .register-form .form-group .select-option {
+.register-form .form-group .select-option {
   position: relative;
 }
-.rs-banner-section3 .register-form .form-group .select-option select {
+.register-form .form-group .select-option select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2259,7 +2279,7 @@ ul {
   z-index: 11;
   position: relative;
 }
-.rs-banner-section3 .register-form .form-group .select-option:after {
+.register-form .form-group .select-option:after {
   content: '\f107';
   font-family: FontAwesome;
   color: #b1b1b1;
